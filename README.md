@@ -7,3 +7,5 @@
 ##### OCI Events
 
 ## OCI Object Storage
+
+<i>Pré Requisitos: Ter Compartimento Criado</i>
