@@ -71,3 +71,17 @@ Nesse passo vamos configurar os dois functions que vamos utilizar nessa dinâmic
 
 * O Primeiro [Function](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/tree/master/scripts_apoio/functions/fn_getApi) é um script para coletar informações de uma API.
 * O Segundo [Function](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/tree/master/scripts_apoio/functions/fn_execute_task), vamos utilizar para chamar uma tarefa no OCI Data Integration para execução.
+
+<b>Para criar o primeiro functions, vamos seguir os comandos abaixo:</b>
+
+> fn init --runtime python fn_getApi
+
+Será criado uma estrutura com três arquivos (func.py, func.yaml e requirements.txt), copiar o conteúdo dos arquivos [func.py](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/blob/master/scripts_apoio/functions/fn_getApi/func.py) e [requirements.txt](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/blob/master/scripts_apoio/functions/fn_getApi/requirements.txt)
+
+Após a configuração dos dois arquivos do passo anterior, executar o comando abaixo:
+
+> fn -v deploy --app App_InLab
+
+Se finalizar com mensagem de sucesso, foi realizado o deploy com sucesso do seu código. Reserver que vamos utilizar ele mais a frente.
+
+
