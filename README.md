@@ -9,3 +9,5 @@
 ## OCI Object Storage
 
 <i>Pré Requisitos: Ter Compartimento Criado</i>
+
+Vamos iniciar com a criação dos buckets dentro do Object Storage, onde irá nos permitir armazenar nossos dados de trabalho.
