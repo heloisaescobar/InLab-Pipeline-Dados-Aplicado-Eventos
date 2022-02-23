@@ -1,10 +1,10 @@
 # OCI InLab - Pipeline de Dados Aplicado a Eventos
 
-* OCI Object Storage
-##### OCI Data Integration
-##### OCI Functions
-##### Autonomous Data Warehouse
-##### OCI Events
+* [OCI Object Storage](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/tree/master#oci-object-storage)
+* OCI Data Integration
+* OCI Functions
+* Autonomous Data Warehouse
+* OCI Events
 
 ## OCI Object Storage
 
