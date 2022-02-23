@@ -176,4 +176,12 @@ Mais abaixo, na mesma página mantenha o botão de rádio Upload Wallet selecion
 
 ![image](https://user-images.githubusercontent.com/46925501/155430535-0d260919-2398-44e5-832c-75601b5f8655.png)
 
+Deixe a opção Default Connection no Name e Identifier. Em seguida coloque o User name e Password fornecido (em caso de dúvida informe ao palestrante que ele te fornecerá as credenciais).
   
+Clique em Teste Connection, se a conexão for bem sucedida clique no botão <i>Create</i>.
+
+![image](https://user-images.githubusercontent.com/46925501/155430632-78dc0791-c3e1-4fb5-84f6-34d01e263b0e.png)
+
+Pronto você criou um Data Asset do Oracle Autonomous Data Warehouse.
+
+<b>Criando o Data Asset do Object Storage</b>
