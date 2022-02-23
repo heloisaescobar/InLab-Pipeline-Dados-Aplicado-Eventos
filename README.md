@@ -84,4 +84,18 @@ Após a configuração dos dois arquivos do passo anterior, executar o comando a
 
 Se finalizar com mensagem de sucesso, foi realizado o deploy com sucesso do seu código. Reserver que vamos utilizar ele mais a frente.
 
+<b>Para o segundo Function, realize primeiro a configuração do OCI Data Integration e depois retorne nesse ponto para finalizarmos a configuração </b>
 
+Após a configuração do OCI Data Integration, vamos seguir com a configuração do segundo Function:
+
+> fn init --runtime python fn_execute_task
+
+Será criado uma estrutura com três arquivos (func.py, func.yaml e requirements.txt), copiar o conteúdo dos arquivos [func.py](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/blob/master/scripts_apoio/functions/fn_execute_task/func.py) e [requirements.txt](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/blob/master/scripts_apoio/functions/fn_execute_task/requirements.txt)
+
+Para o arquivo [func.py](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/blob/master/scripts_apoio/functions/fn_execute_task/func.py), será necessário obter algumas informações do OCI Data Integration e do Object Storage. Para coletar essas informações, [clique aqui](a).
+
+Configurado o código no passo acima, siga com a execução do próximo comando:
+
+> fn -v deploy --app App_InLab
+
+Se finalizar com mensagem de sucesso, foi realizado o deploy com sucesso do seu código. Reserver que vamos utilizar ele mais a frente.
