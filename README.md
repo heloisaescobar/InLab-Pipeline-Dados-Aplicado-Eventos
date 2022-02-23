@@ -37,3 +37,4 @@ Irá abrir uma caixa para que você possa selecionar o arquivo que deseja fazer 
 
 
 ## OCI Functions
+<i>Pré Requisitos: Ter Compartimento Criado, VCN, Aplicar as [Policies](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/blob/master/scripts_apoio/policies_anexo.txt)</i>
