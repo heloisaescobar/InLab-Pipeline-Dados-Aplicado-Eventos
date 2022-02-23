@@ -5,3 +5,5 @@
 ##### OCI Functions
 ##### Autonomous Data Warehouse
 ##### OCI Events
+
+## OCI Object Storage
