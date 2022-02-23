@@ -1,0 +1,62 @@
+Allow service dataintegration to use virtual-network-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage dis-workspaces in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage dis-work-requests in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use virtual-network-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage tag-namespaces in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use object-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> {PAR_MANAGE} in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type='disworkspace', request.principal.id='<WORKSPACE_DI>'}
+Allow group <SEU_GRUPO> to manage buckets in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>', request.permission = 'PAR_MANAGE'}
+Allow group <SEU_GRUPO> to manage buckets in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>', request.permission = 'OBJECT_OVERWRITE'}
+Allow group <SEU_GRUPO> to manage buckets in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>', request.permission = 'OBJECT_CREATE'}
+Allow group <SEU_GRUPO> to read buckets in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>', request.operation = 'GetBucket'}
+Allow any-user to use buckets in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>'}
+Allow service dataintegration to inspect instances in compartment <SEU_COMPARTMENTO>
+Allow any-user {PAR_MANAGE} in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>'}
+Allow service dataintegration to inspect users in compartment <SEU_COMPARTMENTO>
+Allow service dataintegration to inspect compartments in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO>   to manage virtual-network-family in compartment <SEU_COMPARTMENTO>
+Allow any-user to manage objects in compartment <SEU_COMPARTMENTO>  where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>'}
+Allow group <SEU_GRUPO> to read autonomous-database-family in compartment <SEU_COMPARTMENTO>
+Allow any-user to manage buckets in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type = 'disworkspace', request.principal.id = '<WORKSPACE_DI>', request.permission = 'PAR_MANAGE'}
+Allow group <SEU_GRUPO> to use buckets in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type='disworkspace', request.principal.id='<WORKSPACE_DI>'}
+Allow group <SEU_GRUPO> to manage objects in compartment <SEU_COMPARTMENTO> where ALL {request.principal.type='disworkspace',request.principal.id='<WORKSPACE_DI>'}
+Allow group <SEU_GRUPO> to use dataflow-application in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage dataflow-run in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use cloud-shell in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage repos in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to read objectstorage-namespaces in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage logging-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to read metrics in compartment <SEU_COMPARTMENTO>
+Allow service cloudEvents to use functions-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage functions-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use virtual-network-family in compartment <SEU_COMPARTMENTO>
+Allow service FAAS to use virtual-network-family in compartment <SEU_COMPARTMENTO>
+Allow service FAAS to read repos in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use apm-domains in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to read vaults in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use keys in compartment <SEU_COMPARTMENTO>
+Allow service faas to use apm-domains in compartment <SEU_COMPARTMENTO>
+Allow service faas to read repos in compartment <SEU_COMPARTMENTO> where request.operation='ListContainerImageSignatures'
+Allow service faas to {KEY_READ} in compartment <SEU_COMPARTMENTO> where request.operation='GetKeyVersion'
+Allow service faas to {KEY_VERIFY} in compartment <SEU_COMPARTMENTO> where request.operation='Verify'
+Allow group <SEU_GRUPO> to manage buckets in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage objects in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to read buckets in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage objects in compartment <SEU_COMPARTMENTO> where any {request.permission='OBJECT_CREATE', request.permission='OBJECT_INSPECT'}
+Allow dynamic-group dn_group_adm to manage objects in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage dis-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use dis-workspaces in compartment <SEU_COMPARTMENTO>
+Allow dynamic-group dn_group_adm to manage dis-workspaces in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to read cloudevents-rules in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage function-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to inspect compartments in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to use tag-namespaces in compartment <SEU_COMPARTMENTO>
+Allow service cloudEvents to use functions-family in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to read metrics in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage local-peering-gateways in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage vcns in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage local-peering-from in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to manage local-peering-to in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to inspect vcns in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to inspect local-peering-gateways in compartment <SEU_COMPARTMENTO>
+Allow group <SEU_GRUPO> to inspect repos in compartment <SEU_COMPARTMENTO>
