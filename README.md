@@ -63,8 +63,11 @@ Vamos escolher a opção de configuração através do <i>Cloud Shell Setup</i>
 
 ![image](https://user-images.githubusercontent.com/46925501/155427083-86e47860-842e-400e-b18a-628f71d1b07b.png)
 
-<b>Seguir com o procedimento em tela até o passo 7<b/>
+<b>Seguir com o procedimento em tela até o passo 7</b>
 
 ### Step 2
 
-Nesse passo
+Nesse passo vamos configurar os dois functions que vamos utilizar nessa dinâmica:
+
+* O Primeiro [Function](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/tree/master/scripts_apoio/functions/fn_getApi) é um script para coletar informações de uma API.
+* O Segundo [Function](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos/tree/master/scripts_apoio/functions/fn_execute_task), vamos utilizar para chamar uma tarefa no OCI Data Integration para execução.
