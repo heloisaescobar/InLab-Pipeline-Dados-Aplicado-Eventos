@@ -5,7 +5,7 @@
 * [OCI Data Integration](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#oci-data-integration)
 * [Autonomous Data Warehouse](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#autonomous-data-warehouse)
 * [OCI Events](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#oci-events)
-* [Tópico Bônus - Execução do Fluxo]()
+* [Tópico Bônus - Execução do Fluxo](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#t%C3%B3pico-b%C3%B4nus---execu%C3%A7%C3%A3o-do-fluxo)
 
 ## OCI Object Storage
 
@@ -504,3 +504,36 @@ Após preencher as informações como a imagem anterior, clique em <i>Create Rul
 Criação da Regra criado com sucesso!
   
 ## Tópico Bônus - Execução do Fluxo
+
+Após criação de toda a arquitura apresentada durante esse documento, vamos seguir com a execução do nosso fluxo.
+  
+Para isso, primeiramente vamos acessar o <i>Cloud Shell</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155538829-b7c5ab7d-fa1c-49ed-aee8-9ff5d3c032a9.png)
+
+Para invocarmos nosso function, vamos utilizar o seguinte comando:
+> fn invoke App_InLab fn_getapi
+  
+Ao invocarmos o nosso function, será retornada uma mensagem de sucesso, conforme abaixo:
+  
+![image](https://user-images.githubusercontent.com/46925501/155539864-f98c993d-ac40-4768-9e6c-71e2eab14edd.png)
+
+Na imagem acima, temos o nome do arquivo que foi gerado <i>stranger_api20220224-140757.csv</i>. Podemos consultar ele no bucket bucket-raw-data:
+  
+![image](https://user-images.githubusercontent.com/46925501/155540119-5d9d93d2-08cf-43a1-b24d-dde4233d1d49.png)
+
+Para acompanharmos a evolução do nosso fluxo, podemos também acessar a Tarefa que foi criada no OCI Data Integration, seguindo o fluxo abaixo:
+
+No workpace do OCI Data Integration, acesse <i>Applications</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155540537-dd747f1d-e10f-44d1-9f06-8e5aaa8bc56b.png)
+
+Clique na sua aplicação:
+
+![image](https://user-images.githubusercontent.com/46925501/155540826-bc04587d-c117-4077-a72b-8d501c49a184.png)
+
+Em <i>Runs</i>, conseguimos acompanhar e obter informações de todas as execuções:
+  
+![image](https://user-images.githubusercontent.com/46925501/155541153-419f11e4-0834-4a09-8dc1-6a382c6cb5dc.png)
+
+Por fim, você pode acessar os dados inseridos no Autonomous Data Warehouse conforme apresentado no tópico do [Autonomous](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#autonomous-data-warehouse).
