@@ -601,3 +601,25 @@ Para os outros três atributos, vamos acessar o bucket que criamos para armazena
 
 Adicione o conteúdo no código do function.
   
+## Events Services - Coletando parâmetros
+Para esse Events Services, será necessário coletar alguns parâmetros para adicionar a regra.
+Os parâmetros são:
+* CompartmentID
+* namespace
+  
+<b>CompartmentID</b>
+  
+Para coletar o CompartmentID, vamos ao menu de hamburguer, <i>Identity & Security</i> e <i>Compartments</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155551107-a0cd066e-efcd-4952-ae1b-0ef61f4542b3.png)
+
+Localize seu compartimento, clique nele e colete o OCID conforme abaixo:
+  
+![image](https://user-images.githubusercontent.com/46925501/155551354-b4044177-734b-4ef4-8df0-a7c5af22f9a9.png)
+
+Preencher a informação no campo necessário.
+  
+<b>Namespace</b>
+  
+Para coletar o namespace, [clique aqui](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#fn_execute_task---coletando-par%C3%A2metros).
+Preencher a informação no campo necessário.
