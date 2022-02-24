@@ -15,12 +15,12 @@ def handler(ctx, data: io.BytesIO=None):
   )
 def do(signer, objectName):
   dip = DataIntegrationClient(config={}, signer=signer)
-  wsid = "ocid1.disworkspace.oc1.iad.anuwcljt2ow634yazk7nvc7l6kkki7rcfusqrchlery3hsaxqywikp653npa"
-  application="2214e4ca-f171-4b2b-8b42-f835802867c4"
-  task="585139af-d0d4-4f08-9710-7b3049e7663e"
-  connection="378977c5-ecd6-4d53-bdc4-adc6043955b5"
-  bucketName="bucket-raw-data"
-  namespace = "idcmuvumgvos"
+  wsid = "<Adicionar_disworkspace>"
+  application="<Sua_Application>"
+  task="<Sua_Taks>"
+  connection="<ETAG-Bucket>"
+  bucketName="<Nome_Bucket>"
+  namespace = "<NameSpace>"
   md = oci.data_integration.models.RegistryMetadata(aggregator_key=task)
   trkey = str(int(time.time()))
   cp={"bindings":{"PARAMETER_API":{"rootObjectValue":{"modelType":"ENRICHED_ENTITY","entity":{"modelType":"FILE_ENTITY","key":"dataref:"+connection+"/"+bucketName+"/FILE_ENTITY:"+objectName, "externalKey":"https://objectstorage.us-ashburn-1.oraclecloud.com/"+namespace+"/"+bucketName+"/"+objectName, "objectStatus" : 1},"dataFormat":{"formatAttribute":{"modelType":"CSV_FORMAT","encoding":"UTF-8","delimiter": ",","quoteCharacter": "\"","hasHeader": "true","timestampFormat": "yyyy-MM-dd HH:mm:ss.SSS","escapeCharacter": "\\"},"type":"CSV"}}}}}
