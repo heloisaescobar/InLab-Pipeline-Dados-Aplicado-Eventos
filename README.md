@@ -5,6 +5,7 @@
 * [OCI Data Integration](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#oci-data-integration)
 * [Autonomous Data Warehouse](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#autonomous-data-warehouse)
 * [OCI Events](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#oci-events)
+* [Tópico Bônus - Execução do Fluxo]()
 
 ## OCI Object Storage
 
@@ -501,3 +502,5 @@ Por fim e não menos importante, vamos informar a ação que esse evento irá at
 
 Após preencher as informações como a imagem anterior, clique em <i>Create Rule</i>
 Criação da Regra criado com sucesso!
+  
+## Tópico Bônus - Execução do Fluxo
