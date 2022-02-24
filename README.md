@@ -418,6 +418,55 @@ Os arquivos .CSV que estavam no Oracle Object Storage foram extraídos, transfor
 
 Clicar no Hambúrguer superior esquerdo, <i>Oracle Database</i> e <i>Autonomous Data Warehouse</i>
   
-![image](https://user-images.githubusercontent.com/46925501/155434012-c4d7eb6a-6f63-465c-9364-0ef6d1244f41.png)
+![image](https://user-images.githubusercontent.com/46925501/155531068-e823c84f-3210-46b5-8777-121221267337.png)
+
+Verifique se o compartimento está correto e clique em <i>Create Autonomous Database</i>
+  
+![image](https://user-images.githubusercontent.com/46925501/155531442-d1aab77d-acd2-4d0a-8d2b-85beda0d63dd.png)
+
+Informar as informações de <i>Display Name</i>, <i>Database Name</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155531754-eaa11f9e-abf7-4469-b88b-77de1be498ac.png)
+
+Escolher a opção <i>Data Warehouse</i> em Workload Type e <i>Shared Infrastructure</i> em Deployment Type
+  
+![image](https://user-images.githubusercontent.com/46925501/155531853-ed62f919-91df-4f71-8c89-f5e74efc0ade.png)
+
+Para fins de laboratório, vamos utilizar o Autonomous na versão free. Habilite a flag conforme abaixo:
+  
+![image](https://user-images.githubusercontent.com/46925501/155532160-00d419e2-bfc7-464f-adc3-899448ed1cd4.png)
+
+Inserir o password para o usuário ADMIN e após clicar em <i>Create Autonomous Database</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155532347-1a68151d-bc96-4040-b794-a7674cbdd77b.png)
+
+Aguardar o Provisionamento da instância
+
+![image](https://user-images.githubusercontent.com/46925501/155532515-a38c5be1-068d-4914-a8cb-e72d7a3043af.png)
+
+
+## Acessando a Instância do Autonomous Data Warehouse
+
+Clique na instância que você criou no passo anterior:
+
+![image](https://user-images.githubusercontent.com/46925501/155532791-4564ee1e-ddd1-46a6-9ec5-e2879a0fc32b.png)
+
+Selecione a opção <i>Database Actions</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155532956-4c69d5f8-9162-4465-a43b-54a0b32db171.png)
+
+Será Aberta uma console com diversas ações que você poderá executar no Autonomous:
+  
+![image](https://user-images.githubusercontent.com/46925501/155533098-59b93530-fbea-47d4-b517-17b7159d4b18.png)
+
+Para fazer consultas SQL ou executar outras queries, você pode acessar a opção <i>SQL</i>
+ 
+![image](https://user-images.githubusercontent.com/46925501/155533555-3db18700-0df8-4980-9f90-51591a0e64ac.png)
+
+Irá aparecer Like SQL Developer para que você possa executar as suas funções.
+
+![image](https://user-images.githubusercontent.com/46925501/155533857-2da752dc-9f50-40e3-8c6f-3926dc57c7bd.png)
+
+
 
 
