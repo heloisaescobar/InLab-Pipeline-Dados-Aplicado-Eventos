@@ -468,5 +468,36 @@ Irá aparecer Like SQL Developer para que você possa executar as suas funções
 ![image](https://user-images.githubusercontent.com/46925501/155533857-2da752dc-9f50-40e3-8c6f-3926dc57c7bd.png)
 
 ## OCI Events
+  
+Pré Requisitos: Ter Compartimento Criado, VCN, Aplicar as Policies, Criação dos Functions, Autonomous Data Warehouse e OCI Data Integration.
+  
+Após seguir todos os passos anteriores, vamos criar o evento de integração com as funções criadas.
+Para acessar o Event Service, seguir pelo menu de hamburguer, <i>Observability & Management</i> e em Events Services acesse <i>Rules</i>
 
+![image](https://user-images.githubusercontent.com/46925501/155534943-a20745b6-c9b0-42ac-b0c9-ef755fce2ad9.png)
 
+Clique em <i>Create Rule</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155535238-4fb97711-9404-4b2c-9352-0e50e97e0303.png)
+
+Informe o <i>Display Name</i> e uma <i>Description</i> de identificação da Regra:
+  
+![image](https://user-images.githubusercontent.com/46925501/155535730-76d4b980-90a7-47f0-a00b-a34f85410ece.png)
+
+Agora, vamos começar a brincadeira, pois vamos começar a preencher as condições da Regra.
+  
+Primeiramente, vamos informar o tipo de evento. No nosso caso toda vez que um object for criado em um bucket (No Bucket especificado), será gerado um evento.
+
+![image](https://user-images.githubusercontent.com/46925501/155536005-cfa8ae80-74d4-497d-a0d2-8f66540db400.png)
+
+Agora, vamos informar os atributos desse evento. Os atributos que vamos preencher são <i>compartmentId</i>, <i>bucketName</i> e <i>namespace</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155536541-1223434a-ae3d-42a9-9983-5a0cf0cf3d25.png)
+Obs. Para saber como coletar essas informações, [clique aqui](a)
+  
+Por fim e não menos importante, vamos informar a ação que esse evento irá ativar, no nosso caso vamos ativar a função criada para fazer a chamada do OCI Data Integration.
+
+![image](https://user-images.githubusercontent.com/46925501/155536928-7b469269-29a4-4d1c-90f8-d41638f1ea1f.png)
+
+Após preencher as informações como a imagem anterior, clique em <i>Create Rule</i>
+Criação da Regra criado com sucesso!
