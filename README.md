@@ -412,8 +412,12 @@ Você pode utilizar o botão Refresh para visualizar o progresso da integration 
 Após o Status aparecer como ‘Sucess’ a integration task estará concluída com sucesso! 
 Os arquivos .CSV que estavam no Oracle Object Storage foram extraídos, transformados (Data Flow designer) e carregados no Oracle Autonomous Data Warehouse.
 
+# Autonomous Data Warehouse
 
+## Criando uma instância do Autonomous Data Warehouse
 
-
+Clicar no Hambúrguer superior esquerdo, <i>Oracle Database</i> e <i>Autonomous Data Warehouse</i>
+  
+![image](https://user-images.githubusercontent.com/46925501/155434012-c4d7eb6a-6f63-465c-9364-0ef6d1244f41.png)
 
 
