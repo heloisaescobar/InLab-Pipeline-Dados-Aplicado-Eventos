@@ -185,3 +185,51 @@ Clique em Teste Connection, se a conexão for bem sucedida clique no botão <i>C
 Pronto você criou um Data Asset do Oracle Autonomous Data Warehouse.
 
 <b>Criando o Data Asset do Object Storage</b>
+  
+Retorne para a aba do OCI Data Integration
+
+![image](https://user-images.githubusercontent.com/46925501/155430849-aaadbef9-866c-4234-aa3b-bee93b6c806e.png)
+
+E selecione o Workspace que foi criado durante a parte de preparação do ambiente.
+  
+![image](https://user-images.githubusercontent.com/46925501/155430872-c9f90037-e421-4cee-af6f-b2f823998f77.png)
+
+Clique no sinal de <b>+</b> e em seguida clique em Data Assets
+
+![image](https://user-images.githubusercontent.com/46925501/155430906-238282a3-7fea-4829-8ded-626827d63679.png)
+
+Clique em Create Data Asset, você pode observar que uma nova aba chamada Create Data Asset foi aberta.
+
+![image](https://user-images.githubusercontent.com/46925501/155430929-cc3e81d7-0641-459f-88a0-81a69a70bde6.png)
+
+Dê o nome ao Data Asset “DA_OBJstorage” (como na imagem) e selecione o Type como Oracle Object storage
+
+![image](https://user-images.githubusercontent.com/46925501/155430952-90c03e17-a0bb-420d-8760-279dbd0ce87d.png)
+
+Nesta fase, necessitamos de algumas informações que estão distribuídas na console da OCI. Duplique a aba do seu navegador para navegar pelas próximas páginas. Primeiro precisaremos da “tenancy OCID” em seguida o Namespace do Object Storage.
+
+Na aba duplicada, no o canto superior direito clique na figura humana e, em seguida, clique em Tenancy.
+  
+![image](https://user-images.githubusercontent.com/46925501/155431013-f407c853-719f-4012-abd9-88abe3af021e.png)
+
+Uma tela com os detalhes da Tenancy será exibida. Localize o campo OCID e clique em Copy.
+  
+![image](https://user-images.githubusercontent.com/46925501/155431039-2c5f3b51-e925-46c7-bb98-94fd731547e1.png)
+
+Reserve esse ID da tenancy, em seguida copie e reserve o identificador do Namespace do Object Storage (indicado em azul na imagem acima).
+
+Retorne à aba do OCI Data Integration em que está criando o data asset do Object Storage e insira os valores copiados no campo Tenant OCID e Namespace. (Geralmente o campo Namespace é preenchido automaticamente após você colocar o OCID da tenancy, mas caso isso não ocorra cole o Namespace que você salvou no passo anterior)
+A ultima informação necessário para configurarmos o Data Asset do Object Storage é o identificador da sua Region, você vai encontra-lo em sua URL como representado no imagem abaixo
+
+![image](https://user-images.githubusercontent.com/46925501/155431089-7885a910-d1db-4b0d-a0b9-8139baa736f8.png)
+  
+Agora preencha as informações conforme a imagem abaixo:
+
+![image](https://user-images.githubusercontent.com/46925501/155431113-1920ab63-c9a8-44d8-9b48-1fbaef95406b.png)
+
+Mantenha as opções de Connection como estão e clique em Test Connection.
+Se conexão for bem sucedida clique em Create:
+![image](https://user-images.githubusercontent.com/46925501/155431192-ee12bbbf-6093-495a-8bd6-f9ca5c430ad2.png)
+
+Você finalizou a criação dos Data Assets!
+
