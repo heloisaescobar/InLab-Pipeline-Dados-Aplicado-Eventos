@@ -537,3 +537,67 @@ Em <i>Runs</i>, conseguimos acompanhar e obter informações de todas as execuç
 ![image](https://user-images.githubusercontent.com/46925501/155541153-419f11e4-0834-4a09-8dc1-6a382c6cb5dc.png)
 
 Por fim, você pode acessar os dados inseridos no Autonomous Data Warehouse conforme apresentado no tópico do [Autonomous](https://github.com/heloisaescobar/InLab-Pipeline-Dados-Aplicado-Eventos#autonomous-data-warehouse).
+
+## fn_execute_task - Coletando parâmetros
+  
+Para esse function, será necessário coletar alguns parâmetros para adicionar ao código.
+Os parâmetros são:
+  * wsid
+  * application
+  * task
+  * connection
+  * bucketName
+  * namespace
+  
+<b>wsid</b>
+Para Coletar o wsid, vamos acessar nosso workspace do OCI Data Integration e clique nos três pontinhos:
+
+![image](https://user-images.githubusercontent.com/46925501/155544410-ed0d996e-bc03-4978-9237-672c6c67f4cf.png)
+
+Nos três pontinhos, escolha a opção <i>Copy OCID</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155544756-4d972b4d-7b01-4c83-acc7-e5790612c516.png)
+
+Adicione o conteúdo no código do function.
+  
+<b>application</b>
+Para coletar o application, vamos acessar nosso workspace do OCI Data Integration:
+
+![image](https://user-images.githubusercontent.com/46925501/155545057-46ce2d22-e3df-4cf5-b0bf-4dacb258d442.png)
+
+Clique em <i>applications</i>
+  
+![image](https://user-images.githubusercontent.com/46925501/155545234-61b118a5-05c5-4cd7-a2e8-39b50b7b8924.png)
+
+Clique nos três pontinhos:
+
+![image](https://user-images.githubusercontent.com/46925501/155545393-04d368f6-94e4-4793-9f49-b4e9d9e78cbe.png)
+
+Nos três pontinhos, escolha a opção <i>Copy Application Key</i>
+
+![image](https://user-images.githubusercontent.com/46925501/155545563-a103227f-9134-4de0-a704-2d032a357243.png)
+
+Adicione o conteúdo no código do function.
+
+<b>Task</b>
+Para coletar a task, vamos acessar o nosso application da nossa workspace no OCI Data Integration:
+
+![image](https://user-images.githubusercontent.com/46925501/155546554-af82b925-5579-431a-b0f0-e7589edcfb3b.png)
+
+Em <i>Tasks</i>, clique nos três pontinhos da tarefa:
+  
+![image](https://user-images.githubusercontent.com/46925501/155546860-d79dd8d2-e82d-46b4-ba89-25ff5bc89c53.png)
+
+Nos três pontinhos, escolha a opção <i>Copy Task Key</i>:
+![image](https://user-images.githubusercontent.com/46925501/155547058-9b150389-3e3f-45b5-8764-cf2161a94e04.png)
+
+Adicione o conteúdo no código do function.
+  
+<b>Connection, Namespace e BucketName</b>
+
+Para os outros três atributos, vamos acessar o bucket que criamos para armazenar os dados. Acessando o bucket, vamos acessar as demais informações necessárias:
+ 
+![image](https://user-images.githubusercontent.com/46925501/155547971-e8fcfb7b-f04b-4d2d-a6e7-886154673ac6.png)
+
+Adicione o conteúdo no código do function.
+  
