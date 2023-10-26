@@ -1,3 +1,7 @@
+-> DynamicGrou
+ALL{resource.type = 'disworkspace', resource.compartment.id = <compartment-ocid>}
+
+-> Policies
 Allow service dataintegration to use virtual-network-family in compartment <SEU_COMPARTMENTO>
 Allow group <SEU_GRUPO> to manage dis-workspaces in compartment <SEU_COMPARTMENTO>
 Allow group <SEU_GRUPO> to manage dis-work-requests in compartment <SEU_COMPARTMENTO>
