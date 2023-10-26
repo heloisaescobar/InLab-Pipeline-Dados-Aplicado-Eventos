@@ -1,4 +1,4 @@
--> DynamicGrou
+-> DynamicGroup
 ALL{resource.type = 'disworkspace', resource.compartment.id = <compartment-ocid>}
 
 -> Policies
